@@ -8,6 +8,9 @@
     html {
         font-family: 'Montserrat, sans-serif';
         font-size: 10px;
+    }
+    .container-adv {
+        @apply bg-gradient-to-r from-zinc-400 to-stone-600;
     }    
 }
 
@@ -31,14 +34,49 @@
     @apply font-main font-bold text-center text-gray-800 text-[2.8rem];
 }
 
+
+
 .adv__item_left {
-    @apply flex justify-between items-start w-full h-[15rem];
+    @apply h-[13rem] w-[120rem] flex flex-col items-start;
 }
 
 .adv__item_right {
-    @apply flex flex-row-reverse justify-between items-start w-full h-[15rem];
+    @apply h-[13rem] w-[120rem] flex flex-col items-end; 
+}
+
+.adv__item_title {
+    @apply font-main font-semibold underline text-white text-[2rem];
 }
 
 .adv__item_descr {
-    @apply flex flex-col w-[70rem];
+    @apply font-main font-light text-white text-[1.4rem] mt-[1rem];
+}
+
+.adv__item_wrap-left {
+    @apply w-[55rem] h-[13rem] flex flex-col justify-center text-left bg-slate-500 border-gray-800 border-[0.3rem] rounded-3xl p-8 hover:bg-gray-600 hover:border-transparent transition-all duration-500;
+}
+
+.adv__item_wrap-right {
+    @apply w-[55rem] h-[13rem] flex flex-col justify-center text-right bg-slate-500 border-gray-800 border-[0.3rem] rounded-3xl p-8 hover:bg-gray-600 hover:border-transparent transition-all duration-500;
+}
+
+
+.price-wrap {
+    @apply w-full flex justify-around items-start mt-16;
+}
+
+.price-item {
+    @apply w-[40rem] h-[60rem] border-white border-2 p-8 flex flex-col justify-between items-center ;
+}
+
+.price-title {
+    @apply font-main font-bold text-white text-center text-[2.4rem] mt-4;
+}
+
+.price-descr {
+    @apply font-main font-semibold text-white text-center text-[1.8rem] mt-4;
+}
+
+.price-btn {
+    @apply w-[30rem] h-[6rem] font-main font-bold text-gray-900 text-[1.6rem] bg-white rounded-[4rem] transition-all duration-200  hover:bg-cyan-400 hover:shadow-lg hover:shadow-gray-400/50 ;
 }

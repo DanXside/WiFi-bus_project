@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "build": "tailwindcss build -i src/css/main.css -o src/css/style.css --watch",
+    "build": "tailwindcss build -i src/css/main.css -o dist/css/style.css --watch",
     "convert-px-to-rem": "postcss ./dist/css/style.min.css -o ./dist/css/style-debug.css"
   },
   "author": "",
@@ -23,7 +23,8 @@
     "gulp-sass": "^5.1.0",
     "postcss-cli": "^10.1.0",
     "postcss-pxtorem": "^6.0.0",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "tw-elements": "^1.0.0-beta3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
