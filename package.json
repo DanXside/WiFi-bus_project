@@ -1,9 +1,10 @@
 {
-  "name": "terekhovka-web",
+  "name": "incity",
   "version": "1.0.0",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
+    "build": "tailwindcss build -i src/css/main.css -o src/css/style.css --watch",
     "convert-px-to-rem": "postcss ./dist/css/style.min.css -o ./dist/css/style-debug.css"
   },
   "author": "",
@@ -20,14 +21,16 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "postcss-pxtorem": "^6.0.0",
     "sass": "^1.62.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
     "stylelint-config-standard": "^33.0.0",
-    "stylelint-rem-over-px": "^1.0.0"
+    "stylelint-rem-over-px": "^1.0.0",
+    "tailwindcss": "^3.3.3"
   },
   "description": ""
 }
