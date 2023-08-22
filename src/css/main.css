@@ -37,15 +37,15 @@
 
 
 .adv__item_left {
-    @apply h-[13rem] w-[120rem] flex flex-col items-start;
+    @apply h-[16rem] w-[120rem] flex flex-col items-start;
 }
 
 .adv__item_right {
-    @apply h-[13rem] w-[120rem] flex flex-col items-end; 
+    @apply h-[16rem] w-[120rem] flex flex-col items-end; 
 }
 
 .adv__item_title {
-    @apply font-main font-semibold underline text-white text-[2rem];
+    @apply font-main font-semibold text-white text-[2rem];
 }
 
 .adv__item_descr {
@@ -53,11 +53,15 @@
 }
 
 .adv__item_wrap-left {
-    @apply w-[55rem] h-[13rem] flex flex-col justify-center text-left bg-slate-500 border-gray-800 border-[0.3rem] rounded-3xl p-8 hover:bg-gray-600 hover:border-transparent transition-all duration-500;
+    @apply w-[55rem] h-[16rem] flex flex-col justify-center text-left bg-primary-700 border-gray-800 border-[0.3rem] rounded-3xl p-8 hover:bg-gray-600 hover:border-transparent transition-all duration-500;
 }
 
 .adv__item_wrap-right {
-    @apply w-[55rem] h-[13rem] flex flex-col justify-center text-right bg-slate-500 border-gray-800 border-[0.3rem] rounded-3xl p-8 hover:bg-gray-600 hover:border-transparent transition-all duration-500;
+    @apply w-[55rem] h-[16rem] flex flex-col justify-center text-right bg-primary-700 border-gray-800 border-[0.3rem] rounded-3xl p-8 hover:bg-gray-600 hover:border-transparent transition-all duration-500;
+}
+
+.adv__item_divider {
+    @apply w-full h-[0.2rem] bg-primary/60 group-hover:bg-transparent duration-500;
 }
 
 
